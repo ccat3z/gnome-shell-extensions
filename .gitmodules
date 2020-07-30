@@ -1,0 +1,6 @@
+[submodule "drop-down-terminal"]
+	path = drop-down-terminal
+	url = git@github.com:ccat3z/gnome-shell-extension-drop-down-terminal.git
+[submodule "display-profile-manager"]
+	path = display-profile-manager
+	url = git@github.com:ccat3z/gnome-shell-extension-display-profile-manager.git
