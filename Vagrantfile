@@ -10,6 +10,11 @@ Vagrant.configure("2") do |config|
     vb.gui = true
     vb.memory = "1024"
     vb.customize ["modifyvm", :id, "--vram", "128"]
+    vb.customize ["modifyvm", :id, "--accelerate2dvideo", "on"]
+    vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
+    # vb.customize ["modifyvm", :id, "--graphicscontroller", "vmsvga"]
+    vb.customize ["modifyvm", :id, "--graphicscontroller", "vboxvga"]
+    vb.customize ["modifyvm", :id, "--monitorcount", "2"]
   end
 
   config.vm.provision "config-pacman", type: "shell", inline: unindent(<<-SHELL)
